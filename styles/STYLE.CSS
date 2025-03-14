@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #f5f2d0;
+}
+.header{
+    padding:2% 0% 0% 0%;
+
+}
+.header__menu{
+    display: flex;
+    gap: 80px;  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22d4fd;
+}
+
+.header__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22d4fd;
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: #22D4FD; ;
+}
+
+.presentacion {
+    margin:5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 2.16rem;
+    font-family: 'Krona One', sans-serif;
+    margin-top: 15px;
+}
+
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Botones en columnas */
+    align-items: center; /*Centrar cajas */
+}
+
+.presentacion__enlaces__link{
+    width: 50%; /*anchura*/
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 4px;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+    border: 2PX SOLID #22D4FD; /*Contorno de los botones*/
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion__enlaces__link:hover { /*Sombreado cuando paso por el boton */
+    background-color: #272727;
+}
+
+.presentacion__container {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente */
+    justify-content: space-between; /* Espacia elementos */
+    gap: 40px;  /* Espacio entre texto e imagen */
+    margin-bottom: 15px;
+    
+}
+.presentacion__contenido__texto {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f2d0;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    align-content: center;
+    text-align: justify;
+}
+.presentacion__imagen {
+    width: 50%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Opcional: Bordes redondeados */
+}
+
+.presentacion__enlaces__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight:400;
+    margin-top: 30px;
+
+}
+
+.footer {
+    background-color: #22D4FD;
+    padding: 24px;
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 150px;
+}
+
+@media (max-width:975px){
+    .header{
+        padding: 10%;
+        text-align: center;
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    
+    .presentacion__container {
+       flex-direction: column-reverse; 
+       width: auto;
+    }
+}
